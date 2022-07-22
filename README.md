@@ -1,5 +1,5 @@
 ## sbml2hyb
-sbml2hyb is an easy-to-use stand-alone Python application 
+sbml2hyb is an easy-to-use stand-alone Python application for SBML compatible hybrid modelling
 
 ## Installation:
 Can be easily installed using the executable file (.exe) and double-click.
