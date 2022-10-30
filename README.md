@@ -3,7 +3,7 @@
 Hybrid modelling combine parametric functions (derived from knowledge) and nonparametric functions (derived from data) in the same model structure.
 The sbml2hyb tool is an stand-alone executable application for [SBML](https://synonym.caltech.edu/) compatible hybrid modelling. The tool is written in Python and can be used for converting between SBML format and HMOD (intermediate format — enabling communication between the essential components of the mechanistic and hybrid models). See [HMOD](https://github.com/rs-costa/sbml2hyb/blob/main/models/chassagnole1standard.hmod) file example.
 
-[![DOI](https://zenodo.org/badge/501372731.svg)](https://zenodo.org/badge/latestdoi/501372731)
+[![DOI](https://zenodo.org/badge/501372731.svg)](https://zenodo.org/badge/latestdoi/501372731) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Quick start guide
 ### Installation
