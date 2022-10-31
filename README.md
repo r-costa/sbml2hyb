@@ -53,10 +53,12 @@ You can view the standard model SBML file input for this example in a [separate 
 
 <div align="center"> Figure 3. </div>
 
-![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/Figure3.png)
+![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/Figure_3.png)
 
 ## Developed at
 - NOVA School of Science and Technology, Universidade NOVA de Lisboa (since 2021)
+
+![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/logo_new.png)
 
 ## License
 This work is licensed under a <a href="https://www.gnu.org/licenses/gpl-3.0.html"> GNU Public License (version 3.0).</a>
