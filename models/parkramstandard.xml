@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model>
+    <listOfCompartments>
+      <compartment metaid="metaid_0" id="V" spatialDimensions="3" size="1" constant="false"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species metaid="metaid_1" id="PM" compartment="V" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="metaid_2" id="PT" compartment="V" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="metaid_3" id="S" name="S" compartment="V" initialConcentration="5" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="metaid_4" id="X" name="X" compartment="V" initialConcentration="1" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter metaid="metaid_5" id="D" name="D" value="0.1" constant="false"/>
+      <parameter metaid="metaid_6" id="Feed" name="Feed" value="0.525" constant="false"/>
+      <parameter metaid="metaid_7" id="Sin" value="20" constant="false"/>
+      <parameter metaid="metaid_8" id="Y" value="7.3" constant="true"/>
+      <parameter metaid="metaid_9" id="miu" value="0" constant="false"/>
+      <parameter metaid="metaid_10" id="miumax" value="21.87" constant="true"/>
+      <parameter metaid="metaid_11" id="u" name="u" value="0.525" constant="true"/>
+      <parameter metaid="metaid_12" id="vPM" value="0" constant="false"/>
+      <parameter metaid="metaid_13" id="vPT" value="0" constant="false"/>
+    </listOfParameters>
+    <listOfRules>
+      <rateRule metaid="metaid_14" variable="V">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <times/>
+            <ci> D </ci>
+            <ci> V </ci>
+          </apply>
+        </math>
+      </rateRule>
+      <assignmentRule metaid="metaid_15" variable="vPT">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <ci> S </ci>
+              <apply>
+                <power/>
+                <cn> 2.71828182 </cn>
+                <apply>
+                  <times/>
+                  <apply>
+                    <minus/>
+                    <cn> 5 </cn>
+                  </apply>
+                  <ci> S </ci>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <cn> 0.1 </cn>
+              <ci> S </ci>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule metaid="metaid_16" variable="vPM">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <times/>
+              <cn> 4.75 </cn>
+              <apply>
+                <divide/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <cn> 21.87 </cn>
+                    <ci> S </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> S </ci>
+                    <cn> 0.4 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> S </ci>
+                  <cn> 62.5 </cn>
+                </apply>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <cn> 0.12 </cn>
+              <apply>
+                <divide/>
+                <apply>
+                  <divide/>
+                  <apply>
+                    <times/>
+                    <cn> 21.87 </cn>
+                    <ci> S </ci>
+                  </apply>
+                  <apply>
+                    <plus/>
+                    <ci> S </ci>
+                    <cn> 0.4 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <plus/>
+                  <ci> S </ci>
+                  <cn> 62.5 </cn>
+                </apply>
+              </apply>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule metaid="metaid_17" variable="miu">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <divide/>
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <cn> 21.87 </cn>
+                <ci> S </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> S </ci>
+                <cn> 0.4 </cn>
+              </apply>
+            </apply>
+            <apply>
+              <plus/>
+              <ci> S </ci>
+              <cn> 62.5 </cn>
+            </apply>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction metaid="metaid_21" id="rPM" name="rPM" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference metaid="metaid_18" species="PM" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference metaid="metaid_19" species="PM"/>
+          <modifierSpeciesReference metaid="metaid_20" species="PT"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> V </ci>
+              <ci> vPM </ci>
+              <apply>
+                <minus/>
+                <ci> PT </ci>
+                <ci> PM </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="metaid_25" id="rPT" name="rPT" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference metaid="metaid_22" species="PT" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference metaid="metaid_23" species="PT"/>
+          <modifierSpeciesReference metaid="metaid_24" species="X"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> V </ci>
+              <ci> vPT </ci>
+              <ci> X </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="metaid_28" id="rSin" name="rSin" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference metaid="metaid_26" species="S" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference metaid="metaid_27" species="S"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> V </ci>
+              <ci> D </ci>
+              <ci> Sin </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction metaid="metaid_33" id="rX" name="rX" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference metaid="metaid_29" species="S" stoichiometry="7.3"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference metaid="metaid_30" species="X" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference metaid="metaid_31" species="S"/>
+          <modifierSpeciesReference metaid="metaid_32" species="X"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> V </ci>
+              <ci> miu </ci>
+              <ci> X </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+    <listOfEvents>
+      <event metaid="metaid_34" useValuesFromTriggerTime="true">
+        <trigger>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <geq/>
+              <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> time </csymbol>
+              <cn type="integer"> 0 </cn>
+            </apply>
+          </math>
+        </trigger>
+        <delay>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <cn type="integer"> 0 </cn>
+          </math>
+        </delay>
+        <listOfEventAssignments>
+          <eventAssignment metaid="metaid_35" variable="Feed">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <ci> u </ci>
+            </math>
+          </eventAssignment>
+        </listOfEventAssignments>
+      </event>
+    </listOfEvents>
+  </model>
+</sbml>

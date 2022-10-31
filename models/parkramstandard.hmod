@@ -1,0 +1,124 @@
+% --------------------------------------------------------------------------
+% hmod model structure
+
+% Species
+parkramstandard.nspecies=4;
+parkramstandard.species(1).id="PM";
+parkramstandard.species(1).val=0;
+parkramstandard.species(1).compartment="V";
+parkramstandard.species(1).fixed=0;
+parkramstandard.species(1).min=0;
+parkramstandard.species(1).max=15;
+parkramstandard.species(1).isres=1;
+parkramstandard.species(2).id="PT";
+parkramstandard.species(2).val=0;
+parkramstandard.species(2).compartment="V";
+parkramstandard.species(2).fixed=0;
+parkramstandard.species(2).min=0;
+parkramstandard.species(2).max=15;
+parkramstandard.species(2).isres=1;
+parkramstandard.species(3).id="S";
+parkramstandard.species(3).val=5;
+parkramstandard.species(3).compartment="V";
+parkramstandard.species(3).fixed=0;
+parkramstandard.species(3).min=0;
+parkramstandard.species(3).max=15;
+parkramstandard.species(3).isres=1;
+parkramstandard.species(4).id="X";
+parkramstandard.species(4).val=1;
+parkramstandard.species(4).compartment="V";
+parkramstandard.species(4).fixed=0;
+parkramstandard.species(4).min=0;
+parkramstandard.species(4).max=15;
+parkramstandard.species(4).isres=1;
+
+% Compartments
+parkramstandard.ncompartments=1;
+parkramstandard.compartments(1).id="V";
+parkramstandard.compartments(1).val=1;
+parkramstandard.compartments(1).fixed=0;
+parkramstandard.compartments(1).min=0;
+parkramstandard.compartments(1).max=15;
+parkramstandard.compartments(1).isres=0;
+
+% Parameters
+parkramstandard.nparameters=9;
+parkramstandard.parameters(1).id="D";
+parkramstandard.parameters(1).val=0.1;
+parkramstandard.parameters(1).fixed=0;
+parkramstandard.parameters(1).reaction="global";
+parkramstandard.parameters(2).id="Feed";
+parkramstandard.parameters(2).val=0.525;
+parkramstandard.parameters(2).fixed=0;
+parkramstandard.parameters(2).reaction="global";
+parkramstandard.parameters(3).id="Sin";
+parkramstandard.parameters(3).val=20;
+parkramstandard.parameters(3).fixed=0;
+parkramstandard.parameters(3).reaction="global";
+parkramstandard.parameters(4).id="Y";
+parkramstandard.parameters(4).val=7.3;
+parkramstandard.parameters(4).fixed=1;
+parkramstandard.parameters(4).reaction="global";
+parkramstandard.parameters(5).id="miu";
+parkramstandard.parameters(5).val=0;
+parkramstandard.parameters(5).fixed=0;
+parkramstandard.parameters(5).reaction="global";
+parkramstandard.parameters(6).id="miumax";
+parkramstandard.parameters(6).val=21.87;
+parkramstandard.parameters(6).fixed=1;
+parkramstandard.parameters(6).reaction="global";
+parkramstandard.parameters(7).id="u";
+parkramstandard.parameters(7).val=0.525;
+parkramstandard.parameters(7).fixed=1;
+parkramstandard.parameters(7).reaction="global";
+parkramstandard.parameters(8).id="vPM";
+parkramstandard.parameters(8).val=0;
+parkramstandard.parameters(8).fixed=0;
+parkramstandard.parameters(8).reaction="global";
+parkramstandard.parameters(9).id="vPT";
+parkramstandard.parameters(9).val=0;
+parkramstandard.parameters(9).fixed=0;
+parkramstandard.parameters(9).reaction="global";
+
+% Assignment rules
+parkramstandard.nruleAss=3;
+parkramstandard.ruleAss(1).id="vPT";
+parkramstandard.ruleAss(1).val="S * pow(2.71828182, -5 * S) / (0.1 + S)";
+parkramstandard.ruleAss(2).id="vPM";
+parkramstandard.ruleAss(2).val="4.75 * (21.87 * S / (S + 0.4) / (S + 62.5)) / (0.12 + 21.87 * S / (S + 0.4) / (S + 62.5))";
+parkramstandard.ruleAss(3).id="miu";
+parkramstandard.ruleAss(3).val="21.87 * S / (S + 0.4) / (S + 62.5)";
+
+% Events
+parkramstandard.nevents=1;
+parkramstandard.events(1).id="Controller";
+parkramstandard.events(1).trigger="geq(time, 0)";
+parkramstandard.events(1).delay="0";
+parkramstandard.events(1).var(1)="Feed";
+parkramstandard.events(1).var(1)="u";
+
+% Reactions
+parkramstandard.nreaction=4;
+parkramstandard.reaction(1).id="rPM";
+parkramstandard.reaction(1).rate="V * vPM * (PT - PM)";
+parkramstandard.reaction(1).rPM="['1', '0', '0', '0']";
+parkramstandard.reaction(2).id="rPT";
+parkramstandard.reaction(2).rate="V * vPT * X";
+parkramstandard.reaction(2).rPT="['0', '1', '0', '0']";
+parkramstandard.reaction(3).id="rSin";
+parkramstandard.reaction(3).rate="V * D * Sin";
+parkramstandard.reaction(3).rSin="['0', '0', '1', '0']";
+parkramstandard.reaction(4).id="rX";
+parkramstandard.reaction(4).rate="V * miu * X";
+parkramstandard.reaction(4).rX="['0', '0', '-7.3', '1']";
+
+% Rate rules
+parkramstandard.nraterules=1;
+parkramstandard.raterules(1).id="V";
+parkramstandard.raterules(1).val="D * V";
+parkramstandard.raterules(1).min=0;
+parkramstandard.raterules(1).max=1.5;
+parkramstandard.raterules(1).isres=0;
+
+
+end
