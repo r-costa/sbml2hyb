@@ -9,7 +9,7 @@ The sbml2hyb tool is an stand-alone executable application for [SBML](https://sy
 ### Installation
 - Users have two options to install sbml2hyb:
 
-(i) As a typical stand-alone executable Windows application; download the [files](https://drive.google.com/drive/folders/1yBpSaXts-D1bMXjq8MO6AbJkOjSibOji?usp=share_link). After saving the folder where you prefer on your computer, double-click the executable (.exe) file to open the tool.
+(i) As a typical stand-alone executable Windows application; download the [files](https://drive.google.com/drive/folders/1yBpSaXts-D1bMXjq8MO6AbJkOjSibOji?usp=share_link). After saving the Windows folder where you prefer on your computer, double-click the executable (.exe) file to open the tool. It works also on macOS system. 
 
 (ii) As a Python package (pip installer); run the following command via pip:
 pip install -i https://test.pypi.org/simple/ sbml2hyb
@@ -59,6 +59,9 @@ You can view the standard model SBML file input for this example in a [separate 
 - NOVA School of Science and Technology, Universidade NOVA de Lisboa (since 2021)
 
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/logo_new.png)
+
+## Help
+If you have any trouble using the tool or suggestions, please contact:  rs [dot] costa [at] fct [dot] unl [dot] pt
 
 ## License
 This work is licensed under a <a href="https://www.gnu.org/licenses/gpl-3.0.html"> GNU Public License (version 3.0).</a>
