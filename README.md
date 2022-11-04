@@ -28,7 +28,7 @@ After installing the package the user can simply import the library and call it.
 - Tensorflow 2.10.0
 
 ### Getting Started
-#### How to use SBML2HYB:
+#### How to use SBML2HYB
 
 The users can use sbml2hyb either via the command line interface or via a graphical user interface (GUI) that allows to convert SBML files into HMOD files and vice versa. 
 Once the simple Graphical User Interface (GUI) window opens, click the "Translate SBML file" or "Translate HMOD file" button, to find the SBML or HMOD file you want to convert on the tool, respectively.  After few seconds, the user get the final output in the main panel of the GUI. The user can then save (click "export file" button) the final file (.xml or .hmod). 
