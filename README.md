@@ -12,14 +12,13 @@ The sbml2hyb tool is an stand-alone executable application for [SBML](https://sy
 (i) As a typical stand-alone executable Windows application; download the [files](https://drive.google.com/drive/folders/1yBpSaXts-D1bMXjq8MO6AbJkOjSibOji?usp=share_link). After saving the Windows folder where you prefer on your computer, double-click the executable (.exe) file to open the tool. It works also on macOS system. 
 
 (ii) As a Python package (pip installer); run the following command via pip:
-pip install -i https://test.pypi.org/simple/ sbml2hyb
+pip install -i https://test.pypi.org/pypi/ --extra-index-url https://pypi.org/simple sbml2hyb
 - sbml2hyb is written in Python (requires version 3.8 or higher).
 - Alternatively, you can clone this GitHub repository to a location on your computer's file system and then run sbml2hyb.py from the command-line.
 
 After installing the package the user can simply import the library and call it. This is an example on how to use:
 
-      import sbml2hyb as sb
-      sb.main()
+      from sbml2hyb import sbml2hyb
 
 ### Package Dependencies
 - tkinter 3.10.7  
