@@ -1,5 +1,0 @@
-1. Open Command prompt window in this folder
-
-2. Execute the following command "pip install --upgrade cx_Freeze Pillow tensorflow tk python-libsbml"
-
-3. Execute the following command "python create_executable_windows.py build"
