@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/sbml2hyb/Hmod.py
+src/sbml2hyb/__init__.py
+src/sbml2hyb/hmod_parser.py
+src/sbml2hyb/hmod_validator.py
+src/sbml2hyb/neural_network_parser.py
+src/sbml2hyb/sbml2hyb.py
+src/sbml2hyb/xml_parser.py
+src/sbml2hyb/xml_validator.py
+src/sbml2hyb.egg-info/PKG-INFO
+src/sbml2hyb.egg-info/SOURCES.txt
+src/sbml2hyb.egg-info/dependency_links.txt
+src/sbml2hyb.egg-info/requires.txt
+src/sbml2hyb.egg-info/top_level.txt
