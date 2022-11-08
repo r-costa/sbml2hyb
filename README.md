@@ -9,7 +9,7 @@ The sbml2hyb tool is an stand-alone executable application for [SBML](https://sy
 ### Installation
 - Users have two options to install sbml2hyb:
 
-(i) As a typical stand-alone executable Windows application; download the [files](https://drive.google.com/drive/folders/1yBpSaXts-D1bMXjq8MO6AbJkOjSibOji?usp=share_link). After saving the Windows folder where you prefer on your computer, double-click the executable (.exe) file to open the tool. It works also on macOS system. 
+(i) As a typical stand-alone executable Windows application; download the [files](https://drive.google.com/drive/folders/1yBpSaXts-D1bMXjq8MO6AbJkOjSibOji?usp=share_link). After saving the Windows folder where you prefer on your computer, double-click the executable (`sbml2hyb_exe.exe`) file to open the tool. It works also on macOS system. 
 
 (ii) As a Python package (pip installer); run the following command via `pip`:
 `pip install -i https://test.pypi.org/pypi/ --extra-index-url https://pypi.org/simple sbml2hyb`
