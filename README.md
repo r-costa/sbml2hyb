@@ -3,7 +3,7 @@
 Hybrid modelling combine parametric functions (derived from knowledge) and nonparametric functions (derived from data) in the same model structure.
 The sbml2hyb tool is an stand-alone executable application for [SBML](https://synonym.caltech.edu/) compatible hybrid modelling. The tool is written in Python and is intended as an interface to convert existing SBML models into a hybrid model (combines mechanistic equations and ML techniques).
 
-The new internal hybrid model format HMOD (intermediate format — enables communication between the essential components of the mechanistic and hybrid models) can be translated to SBML and vice-versa. See [HMOD](https://github.com/rs-costa/sbml2hyb/blob/main/models/chassagnole1standard.hmod) file example.
+The new internal hybrid model format HMOD (intermediate format — enables communication between the essential components of the mechanistic and hybrid models) can be translated to SBML and vice-versa in sbml2hyb. See [HMOD](https://github.com/rs-costa/sbml2hyb/blob/main/models/chassagnole1standard.hmod) file example.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg)](https://doi.org/10.5281/zenodo.7293206) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -30,15 +30,15 @@ After installing the package the user can simply import the library and call it.
 - Tensorflow 2.10.0
 
 ### Getting Started
-#### How to use SBML2HYB
+#### ►  How to use SBML2HYB
 
 The users can use sbml2hyb either via the command line interface or via a graphical user interface (GUI) that allows to convert SBML files into HMOD files and vice versa. 
 Once the simple Graphical User Interface (GUI) window opens, click the *"Translate SBML file"* or *"Translate HMOD file"* button, to find the SBML or HMOD file you want to convert on the tool, respectively.  After few seconds, the user get the final output in the main panel of the GUI. The user can then save (click *"Save file"* button) the final file (.xml or .hmod). 
 
-Additionally, the user can adds information of the neural network component (optional) into the HMOD/SBML model format (first load a standard HMOD/SBML model file or after a first translate HMOD/SBML model step).  Click *"Add ML"* button  . Once the user do this, they need select the *"inputs"* and *"outputs"* options of the neural network, and the Keras H5 file (i.e., adding the ML component information). Click the *"Confirm"* button. Finally, the resulting hybrid model in HMOD (or SBML) format can then be reconverted in SBML (or HMOD), respectively. Click *"Translate HMOD file"* or *"Translate SBML file"* button. To generate an Keras H5 file that serves as a blueprint of the machine learning segment of a hybrid model, the Keras library from Tensorflow is used (see [instructions](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/instructions_createH5.txt) and an example as [notebook](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/create_keras_h5.ipynb)).
+The user can then add the information of the neural network component (Click *"Add ML"* button) into the HMOD/SBML model format (note that first the user needs to load a standard HMOD/SBML model file). Once the user do this, they need select the *"inputs"* and *"outputs"* options of the neural network, and the Keras H5 file (i.e., adding the ML component information). Click the *"Confirm"* button. Finally, the resulting hybrid model in HMOD (or SBML) format can then be reconverted in SBML (or HMOD), respectively. Click *"Translate HMOD file"* or *"Translate SBML file"* button. To generate an Keras H5 file that serves as a blueprint of the machine learning segment of a hybrid model, the Keras library from Tensorflow should be used (see [instructions](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/instructions_createH5.txt) and an example as [notebook](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/create_keras_h5.ipynb)).
 
 
-#### Creating a hybrid SBML model
+#### ►  Creating a hybrid SBML model
 
 Example: *Park&Ramirez* model
 
