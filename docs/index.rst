@@ -22,11 +22,11 @@ Using SBML2HYB
 Here is an example of a SBML hybrid model (*Chassagnole* case study) built with **sbml2hyb**:
 
 After launching sbml2hyb (see installation instructions), the following graphical user interface (GUI) will be open (Figure 2).
-Once the simple GUI window opens, click the "Translate SBML file" button (see Figure 2), and browse to specify the SBML model file (here the mechanistic model example is taken from Biomodels database, `BIOMD0000000066
+Once the simple GUI window opens, click the "*Translate SBML file*" button (see Figure 2), and browse to specify the SBML model file (here the mechanistic model example is taken from Biomodels database, `BIOMD0000000066
 <https://www.ebi.ac.uk/biomodels/BIOMD0000000066#Files>`_) you want to convert.
-Add then the information of the neural network component into the model (click "Add ML" button). Once you do this, select the "Inputs" (select all) and "Outputs" (vm5, vm4f, vm3f, vm2f, vm11, knadph and katpase) options, and the `Keras <https://github.com/r-costa/sbml2hyb/blob/main/models/Chass_Keras.h5>`_ neural network file for this case study (Figure 3) to be added to the mechanistic model. After this, click the "Confirm" buttons. Note: To generate the Keras H5 file that serves as a blueprint of the machine learning segment of the hybrid model, follow this `instructions <https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/instructions_createH5.txt>`_ or this example as `notebook <https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/create_keras_h5.ipynb>`_.
-Finally, the hybrid model generated in HMOD format is reconverted in SBML by clicking the "Translate HMOD file" button and then "Confirm" button (Figure 4). 
-To save the final hybrid SBML model file, click "Save file" button (Figure 5). 
+Add then the information of the neural network component into the model (click "*Add ML*" button). Once you do this, select the "*Inputs*" (select all) and "*Outputs*" (vm5, vm4f, vm3f, vm2f, vm11, knadph and katpase) options, and the `Keras <https://github.com/r-costa/sbml2hyb/blob/main/models/Chass_Keras.h5>`_ neural network file for this case study (Figure 3) to be added to the mechanistic model. After this, click the "*Confirm*" buttons. Note: To generate the Keras H5 file that serves as a blueprint of the machine learning segment of the hybrid model, follow this `instructions <https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/instructions_createH5.txt>`_ or this example as `notebook <https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/create_keras_h5.ipynb>`_.
+Finally, the hybrid model generated in HMOD format is reconverted in SBML by clicking the "*Translate HMOD file*" button and then "*Confirm*" button (Figure 4). 
+To save the final hybrid SBML model file, click "*Save file*" button (Figure 5). 
 
 
 .. figure:: images/Figure2.png
