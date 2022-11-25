@@ -33,3 +33,19 @@ To save the final hybrid SBML model file, click "Save file" button (Figure 5).
    :alt: The main GUI of sbml2hyb
    
    **Figure 2. The main GUI of sbml2hyb.**
+   
+.. figure:: images/Figure3.png
+   :alt: Screenshot of the ML component panel. Here, the user can select the input/output variables and the Keras neural network file in H5 format, which is automatically added to the mechanistic model
+
+   **Figure 3. Screenshot of the ML component panel. Here, the user can select the input/output variables and the Keras neural network file in H5 format, which is automatically added to the mechanistic model.**
+
+
+.. figure:: images/Figure4.png
+   :alt: Print screen of the hybrid model in HMOD format that can be converted to SBML
+
+   **Figure 4. Print screen of the hybrid model in HMOD format that can be converted to SBML.**
+
+.. figure:: images/Figure5.png
+   :alt: Print screen of the hybrid model in HMOD format that can be converted to SBML
+
+   **Figure 5. Print screen of the final hybrid model in SBML.**
