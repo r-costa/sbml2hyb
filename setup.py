@@ -32,13 +32,13 @@ long_description_content_type='text/markdown',
 author='Rafael Costa',
 
 # Your email address:
-author_email='rafael.s.costa@tecnico.ulisboa.pt',
+author_email='rs.costa@fct.unl.pt',
 
 # Link to your github repository or website: 
-url='https://github.com/rs-costa/sbml2hyb',
+url='https://github.com/r-costa/sbml2hyb',
 
 # Download Link from where the project can be downloaded from:
-download_url='https://github.com/rs-costa/sbml2hyb',
+download_url='https://github.com/r-costa/sbml2hyb',
 
 
 # List project dependencies: 
