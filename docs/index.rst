@@ -49,3 +49,27 @@ To save the final hybrid SBML model file, click "Save file" button (Figure 5).
    :alt: Print screen of the hybrid model in HMOD format that can be converted to SBML
 
    **Figure 5. Print screen of the final hybrid model in SBML.**
+   
+--------
+Installation
+--------
+The sbml2hyb package is available from ``pypi`` and can be installed via::
+
+      pip install sbml2hyb
+      
+For detailed installation instructions please see `https://github.com/r-costa/sbml2hyb
+<https://github.com/r-costa/sbml2hyb>`_
+
+--------
+How to cite
+--------
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg
+   :alt: Zenodo DOI
+ 
+--------
+License
+--------
+
+SBML2HYB is distributed under the  `GNU Public License (version 3.0)
+<https://www.gnu.org/licenses/gpl-3.0.html>`_.
