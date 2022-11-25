@@ -5,7 +5,7 @@ The sbml2hyb tool is an stand-alone executable application for [SBML](https://sy
 
 The new internal hybrid model format HMOD (intermediate format — enables communication between the essential components of the mechanistic and hybrid models) can be translated to SBML and vice-versa in sbml2hyb. See [HMOD](https://github.com/rs-costa/sbml2hyb/blob/main/models/chassagnole1standard.hmod) file example.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg)](https://doi.org/10.5281/zenodo.7293206) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg)](https://doi.org/10.5281/zenodo.7293206) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Quick start guide
 ### Installation
@@ -65,7 +65,7 @@ You can view the mechanistic model SBML file input for this example in a [separa
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/logo_new.png)
 
 ## Help
-If you have any trouble using the tool or suggestions, please contact:  rs [dot] costa [at] fct [dot] unl [dot] pt
+If you have any trouble using the tool or suggestions, please contact:  rs [dot] costa [at] fct [dot] unl [dot] pt OR open an [issue](https://github.com/r-costa/sbml2hyb/issues).
 
 ## License
 This work is licensed under a <a href="https://www.gnu.org/licenses/gpl-3.0.html"> GNU Public License (version 3.0).</a>
