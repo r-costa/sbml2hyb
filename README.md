@@ -5,7 +5,7 @@ The sbml2hyb tool is an stand-alone executable application for [SBML](https://sy
 
 The new internal hybrid model format HMOD (intermediate format — enables communication between the essential components of the mechanistic and hybrid models) can be translated to SBML and vice-versa in sbml2hyb. See [HMOD](https://github.com/rs-costa/sbml2hyb/blob/main/models/chassagnole1standard.hmod) file example.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg)](https://doi.org/10.5281/zenodo.7293206) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Documentation Status](https://readthedocs.org/projects/sbml2hyb/badge/?version=latest)](https://sbml2hyb.readthedocs.io/en/latest/?badge=latest) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg)](https://doi.org/10.5281/zenodo.7293206) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Documentation Status](https://readthedocs.org/projects/sbml2hyb/badge/?version=latest)](https://sbml2hyb.readthedocs.io/en/latest/?badge=latest) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![PyPI version](https://badge.fury.io/py/sbml2hyb.svg)](https://badge.fury.io/py/sbml2hyb)
 
 ## Quick start guide
 ### Installation
