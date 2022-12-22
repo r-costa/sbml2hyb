@@ -56,13 +56,13 @@ Installation
 --------
 The sbml2hyb package is available from ``pypi`` and can be installed via::
 
-      pip install sbml2hyb
+      $ pip install sbml2hyb
       
 For detailed installation instructions please see `https://github.com/r-costa/sbml2hyb
 <https://github.com/r-costa/sbml2hyb>`_.
 
 --------
-How to cite
+How to cite SBML2HYB
 --------
 
 .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg
