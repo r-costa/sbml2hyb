@@ -11,7 +11,7 @@ The new internal hybrid model format HMOD (intermediate format — enables commu
 ### Installation
 - Users have two options to install sbml2hyb:
 
-(i) As a typical stand-alone executable Windows application; download the [files](https://drive.google.com/drive/folders/1yBpSaXts-D1bMXjq8MO6AbJkOjSibOji?usp=share_link). After saving the Windows folder where you prefer on your computer, double-click the executable (`sbml2hyb_exe.exe`) file to open the tool. It works also on [macOS](https://drive.google.com/drive/folders/1ivWOPKkeZFpVPF5RsPFN6UQm1I-VLfMY) system. 
+(i) As a typical stand-alone executable Windows application; download the [files](https://figshare.com/ndownloader/files/38688132). After saving the Windows folder where you prefer on your computer, double-click the executable (`sbml2hyb_exe.exe`) file to open the tool. It works also on [macOS](https://figshare.com/ndownloader/files/38688432) system. 
 
 (ii) As a Python package (pip installer); run the following command via `pip`:
 `pip install sbml2hyb`
