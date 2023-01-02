@@ -37,7 +37,7 @@ Once the simple Graphical User Interface (GUI) window opens, click the *"Transla
 
 The user can then add the information of the neural network component (Click *"Add ML"* button) into the HMOD/SBML model format (note that first the user needs to load a mechanistic HMOD/SBML model file). Once the user do this, they need select the *"inputs"* and *"outputs"* options of the neural network, and the Keras H5 file (i.e., add the ML component information). Click the *"Confirm"* button. Finally, the resulting hybrid model in HMOD (or SBML) format can then be reconverted in SBML (or HMOD), respectively. Click *"Translate HMOD file"* or *"Translate SBML file"* button. 
 
-NOTE: To generate an Keras H5 file that serves as a blueprint of the machine learning segment of a hybrid model, the Keras library from Tensorflow should be used (see [instructions](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/instructions_createH5.txt) and an example as [notebook](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/create_keras_h5.ipynb)).
+NOTE: To generate an Keras H5 file that serves as a blueprint of the machine learning segment of a hybrid model, the Keras library from Tensorflow should be used (see [instructions](https://github.com/r-costa/sbml2hyb/blob/main/createH5_instructions.txt) and an example as [notebook](https://github.com/rs-costa/sbml2hyb/blob/main/models/keras_H5/create_keras_h5.ipynb)).
 
 Visit also the documentation of the tool hosted on [Read the Docs](https://sbml2hyb.readthedocs.io/en/latest/index.html#).
 
