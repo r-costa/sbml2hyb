@@ -28,7 +28,7 @@ Once the simple GUI window opens, click the "*Translate SBML file*" button (see 
 Add then the information of the neural network component into the model (click "*Add ML*" button). Once you do this, select the "*Inputs*" (select all) and "*Outputs*" (vm5, vm4f, vm3f, vm2f, vm11, knadph and katpase) options, and the `Keras <https://github.com/r-costa/sbml2hyb/blob/main/models/Chass_Keras.h5>`_ neural network file for this case study (Figure 3) to be added to the mechanistic model. After this, click the "*Confirm*" buttons. Finally, the hybrid model generated in HMOD format is reconverted in SBML by clicking the "*Translate HMOD file*" button and then "*Confirm*" button (Figure 4). 
 To save the final hybrid SBML model file, click "*Save file*" button (Figure 5). 
 
-NOTE: To generate the Keras H5 file that serves as a blueprint of the machine learning segment of the hybrid model, follow these instructions:
+**NOTE:** To generate the Keras H5 file that serves as a blueprint of the machine learning segment of the hybrid model, follow these instructions:
 
 1- To generate an H5 file that serves as a blueprint of the machine learning segment of a hybrid model, the Keras library from Tensorflow, Python is used. After importing this library, the first step is to initialize a sequential artificial neural network (ANN) model via the “Sequential” function in the form “model=Sequential()”, where model is a variable containing the model information.
 
