@@ -1,0 +1,10 @@
+Instructions for generation of an Keras H5 file:
+
+1- To generate an H5 file that serves as a blueprint of the machine learning segment of a hybrid model, the Keras library from Tensorflow, Python is used. After importing this library, the first step is to initialize a sequential artificial neural network (ANN) model via the “Sequential” function in the form “model=Sequential()”, where model is a variable containing the model information.
+
+2- This is followed with adding any number of hidden layers with a hyperbolic tangent activation function via the “add” function. This function should be written for each layer in the form:
+“model.add(Dense(NH, activation=’tanh’, input_shape(Nprev,)))”, where NH is the number of hidden nodes the user desires in this layer and Nprev is the number of nodes on the previous layer. For the first layer, Nprev must correspond to the number of desired network inputs.
+
+3- After the user is satisfied with the number of hidden layers, the final layer should be written in the form: “model.add(Dense(Nout))”, where Nout is the number of outputs the user wishes the machine learning section to have.
+
+4- With the model finalized, it can the be saved to an H5 file using the “save” function in the form: “model.save(‘filename.h5’)”
