@@ -13,7 +13,7 @@ The new internal hybrid model format HMOD (intermediate format — enables commu
    **Figure 1. Overview of the sbml2hyb pipeline.**
 
 
-Source code available `here
+Source code available `HERE
 <https://github.com/r-costa/sbml2hyb>`_.
 
 --------
