@@ -59,12 +59,17 @@ You can view the mechanistic model SBML file input for this example in a [separa
 
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/Figure_3.png)
 
-## Developed at
-- NOVA School of Science and Technology, Universidade NOVA de Lisboa (since 2021)
+## ☼ Citation
+Please cite our paper if you use sbml2hb:
+
+José Pinto*, Rafael S. Costa*†, Leonardo Alexandre, J. Ramos, Rui Oliveira, SBML2HYB: a Python interface for SBML compatible hybrid modelling. Bioinformatics (2023)
+
+## ⸎ Developed at
+- NOVA School of Science and Technology, Universidade NOVA de Lisboa
 
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/logo_new.png)
 
-## Help
+## ⁇ Help
 If you have any trouble using the tool or suggestions, please contact:  rs [dot] costa [at] fct [dot] unl [dot] pt OR open an [issue](https://github.com/r-costa/sbml2hyb/issues).
 
 ## License
