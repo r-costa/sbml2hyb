@@ -77,8 +77,7 @@ For detailed installation instructions please see `https://github.com/r-costa/sb
 How to cite SBML2HYB
 --------
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg
-   :alt: Zenodo DOI
+José Pinto*, Rafael S. Costa*†, L. Alexandre, J. Ramos, Rui Oliveira, *SBML2HYB: a Python interface for SBML compatible hybrid modelling.* Bioinformatics (2023) | doi: https://doi.org/10.1093/bioinformatics/btad044
  
 --------
 License
