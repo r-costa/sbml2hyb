@@ -60,9 +60,9 @@ You can view the mechanistic model SBML file input for this example in a [separa
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/Figure_3.png)
 
 ## ☼ Citation
-Please cite our paper if you use sbml2hyb:
+Please cite our paper if you use SBML2HYB:
 
-José Pinto*, Rafael S. Costa*†, L. Alexandre, J. Ramos, Rui Oliveira, SBML2HYB: a Python interface for SBML compatible hybrid modelling. Bioinformatics (2023) | doi: https://doi.org/10.1093/bioinformatics/btad044, PMID: 36661327
+José Pinto*, Rafael S. Costa*†, L. Alexandre, J. Ramos, Rui Oliveira, *SBML2HYB: a Python interface for SBML compatible hybrid modelling.*                  Bioinformatics (2023) | DOI: https://doi.org/10.1093/bioinformatics/btad044, PMID: 36661327
 
 ## ⸎ Developed at
 - NOVA School of Science and Technology, Universidade NOVA de Lisboa
