@@ -1,14 +1,14 @@
-# SBML2HYB
+# SBML2HYB <img align="right" src="https://github.com/rs-costa/sbml2hyb/blob/main/img/sbml2hyb_logo.png" width="200" />
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7293206.svg)](https://doi.org/10.5281/zenodo.7293206) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Documentation Status](https://readthedocs.org/projects/sbml2hyb/badge/?version=latest)](https://sbml2hyb.readthedocs.io/en/latest/?badge=latest) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![PyPI version](https://badge.fury.io/py/sbml2hyb.svg)](https://badge.fury.io/py/sbml2hyb)
 
 ## Overview
 Hybrid modelling combine parametric functions (derived from knowledge) and nonparametric functions (derived from data) in the same model structure.
-The sbml2hyb tool is a stand-alone executable application for [SBML](https://synonym.caltech.edu/) compatible hybrid modelling. The tool is written in Python and is intended as an interface to convert existing SBML models into a hybrid model (combines mechanistic equations and ML techniques).
+The sbml2hyb tool is a stand-alone executable application for [SBML](https://synonym.caltech.edu/) compatible hybrid modelling. The tool is written in Python and is intended as an interface to convert existing SBML models into a hybrid model (combines mechanistic equations and machine learning techniques).
 
 The new internal hybrid model format HMOD (intermediate format — enables communication between the essential components of the mechanistic and hybrid models) can be translated to SBML and vice-versa in sbml2hyb. See [HMOD](https://github.com/rs-costa/sbml2hyb/blob/main/models/chassagnole1standard.hmod) file example.
 
-
+See our [publication](https://www.mdpi.com/2673-2688/4/1/14) that used sbml2hyb for Systems Biology applications.
 
 ## Quick start guide
 ### Installation
@@ -63,7 +63,7 @@ You can view the mechanistic model SBML file input for this example in a [separa
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/Figure_3.png)
 
 ## ☼ Citation
-Please cite our paper if you use SBML2HYB:
+Please cite our paper if you use SBML2HYB in your research:
 
 José Pinto*, Rafael S. Costa*†, L. Alexandre, J. Ramos, Rui Oliveira, *SBML2HYB: a Python interface for SBML compatible hybrid modelling.*                  Bioinformatics (2023) | DOI: https://doi.org/10.1093/bioinformatics/btad044, PMID: 36661327
 
