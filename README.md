@@ -10,6 +10,8 @@ The new internal hybrid model format HMOD (intermediate format — enables commu
 
 See our [publication](https://www.mdpi.com/2673-2688/4/1/14) that used sbml2hyb for Systems Biology applications.
 
+________________________________________________________________
+
 ## Quick start guide
 ### Installation
 - Users have two options to install sbml2hyb:
