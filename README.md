@@ -72,6 +72,8 @@ José Pinto*, Rafael S. Costa*†, L. Alexandre, J. Ramos, Rui Oliveira, *SBML2H
 ## ⸎ Developed at
 - NOVA School of Science and Technology, Universidade NOVA de Lisboa
 
+*Authors:* [Rafael Costa](https://github.com/r-costa)
+
 ![alt text](https://github.com/rs-costa/sbml2hyb/blob/main/img/logo_new.png)
 
 ## ⁇ Help
